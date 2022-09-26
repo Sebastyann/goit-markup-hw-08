@@ -1,0 +1,97 @@
+@media screen and (max-width: 767px) {
+  .employees-thumb__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: var(--secondaty-bg-color);
+  }
+
+  .employees-work__list {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+  .employees__text {
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: var(--primary-text-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .employees {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+ .employees__card {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .employees-thumb__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: var(--secondaty-bg-color);
+  }
+
+  .employees-work__list {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+  .employees__text {
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--primary-text-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  
+  .employees__card {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+  
+  .employees-work__list {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+
+  .employees__text {
+    line-height: 1.7;
+    color: var(--primary-text-color);
+  }
+
+  .employees-thumb__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: var(--secondaty-bg-color);
+  }
+}

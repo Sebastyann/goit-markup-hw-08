@@ -1,0 +1,44 @@
+.logo {
+  text-decoration: none;
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo .blue {
+  color: var(--primery-accent-color);
+}
+.logo .black {
+  color: #000000;
+}
+.logo .white {
+  color: var(--primary-bg-color);
+}
+
+.box-header {
+  color: #2196f3;
+}
+
+.blu {
+  color: var(--primery-accent-color);
+}
+.white {
+  color: var(--primary-bg-color);
+}
+
+@media screen and (min-width: 767px) {
+ .logo.head {
+  margin-right: 87px;
+  padding-top: 24px;
+  padding-bottom: 25px;}
+}
+
+@media screen and (min-width: 1200px) {
+  .logo.head {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+}
