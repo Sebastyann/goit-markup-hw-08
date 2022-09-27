@@ -25,6 +25,9 @@
       color: var(--primery-accent-color);
     }
   }
+  .site-nav__link.current {
+   color: var(--primery-accent-color) 
+  }
   .contacts-nav {
     display: none;
   }
@@ -43,8 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
-}
+  }
 
 
 @media screen and (min-width: 768px) {
@@ -121,6 +123,7 @@
     display: block;
     color: currentColor;
   }
+
   .site-nav__link::after {
     content: "";
     position: absolute;

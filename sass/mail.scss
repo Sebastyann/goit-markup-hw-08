@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+@import "./utils/placeholders";
 
 @import "./base/common";
 @import "./base/section";
@@ -12,6 +13,8 @@
 @import "./components/conteiner-work";
 @import "./components/logo-color";
 @import "./components/mobile-menu";
+@import "./components/model-open-button";
+
 
 @import "./layout/header";
 @import "./layout/hero";

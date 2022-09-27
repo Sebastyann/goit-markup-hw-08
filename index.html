@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="conteiner page-header__container">
+      <div class="container page-header__container">
         <nav class="site-nav">
           <a href="./index.html" class="logo head"
             ><span class="logo blu">Web</span
@@ -54,50 +54,48 @@
       </button>
       </div>
       <div class="mobile-menu is-open js-menu-container">
-        <div class="conteiner mobile-menu__container">
+        <div class="container mobile-menu__container">
           <button class="mobile-menu__close-btn js-close-menu">
             <svg class="mobile-menu__close-icon">
               <use href="./images/icons.svg#icon-close">
              </use>
            </svg>
          </button>
-        <div class="mobile-menu__blok">
           <ul class="site-nav-mobil__list">
             <li class="site-nav list">
-              <a href="./index.html" class=" link">Студія</a>
+              <a href="./index.html" class="mobile-nav-list__link link current">Студія</a>
             </li>
             <li class="site-nav list">
-              <a href="./portfolio.html" class=" link">Портфоліо</a>
+              <a href="./portfolio.html" class="mobile-nav-list__link link">Портфоліо</a>
             </li >
             <li class="site-nav list">
               <a href="" class=" link">Контакти</a></li>
           </ul>
              <ul class="">
-               <li class="mobile-menu__tel--bottom list">
+               <li class="mobile-menu__bottom list">
                   <a class="mobile-menu__tel link" href="tel:+380961111111">
                +38 096 111 11 11</a>
                  </li>
-                <li class="mobile-menu__mail--bottom list">
+                <li class="mobile-menu__bottom list">
                   <a class="mobile-menu__mail link" href="mailto:info@devstudio.com">
                     info@devstudio.com</a>
                </li>
             </ul>
            <ul class="modile-menu-item list ">
-            <li class="">
+            <li class="mobile-social-network__item">
               <a class="modile-menu-company__list" href="http://instagram.com">Instagram</a>
             </li>
-            <li>
+            <li class="mobile-social-network__item">
               <a class="modile-menu-company__list" href="http://twitter.com">Twitter</a>
             </li>
-            <li>
+            <li class="mobile-social-network__item">
               <a class="modile-menu-company__list" href="http://facebook.com/">Facebook</a>
             </li>
-            <li>
+            <li class="mobile-social-network__item">
               <a class="modile-menu-company__list" href="http://linkedin.com/">LinkedIn</a>
             </li>
            </ul> 
          </div>
-        </div>
       </div> 
      </header>   
       <main>
@@ -108,7 +106,7 @@
         </button> -->
       </section>
      <section class="section" id="stud">
-        <div class="conteiner">
+        <div class="container">
           <ul class="list employees">
             <li class="employees__card">
               <div class="employees-thumb__icon">
@@ -172,35 +170,41 @@
           </ul>
         </div>
       </section>
-      <section class="work-conteiner section">
-        <div class="conteiner">
+      <section class=" section">
+        <div class="container working-section__container">
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="list work-box">
             <li class="work-img">
+                <picture>
+                <source srcset="./images/box1-desktop.webp 1x, ./images/box1-desktop@2x.webp 2x" media="(min-width: 1200px)" type="imgage/webp" />
+                <source srcset="./images/box1-desktop.jpg 1x, ./images/box1-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
               <img
-                src="images/box1.jpg"
-                alt="photo1"
-                width="370"
-                height="294"
+                src="./images/box1-desktop.jpg"
+                alt="верстка скелету сайту"
               />
+              </picture>
               <p class="work-thumb">Десктопні додатки</p>
             </li>
             <li class="work-img">
+                <picture>
+                <source srcset="./images/box2-desktop.webp 1x, ./images/box2-desktop@2x.webp 2x" media="(min-width: 1200px)" type="imgage/webp" />
+                <source srcset="./images/box2-desktop.jpg 1x, ./images/box2-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
               <img
-                src="images/box2.jpg"
-                alt="photo2"
-                width="370"
-                height="294"
+                src="./images/box2-desktop.jpg"
+                alt="дизайн застосунків на телефони"
               />
+              </picture>
               <p class="work-thumb">мобільні додатки</p>
             </li>
             <li class="work-img">
+               <picture>
+                <source srcset="./images/box3-desktop.webp 1x, ./images/box3-desktop@2x.webp 2x" media="(min-width: 1200px)" type="imgage/webp" />
+                <source srcset="./images/box3-desktop.jpg 1x, ./images/box3-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
               <img
-                src="images/box3.jpg"
-                alt="photo3"
-                width="370"
-                height="294"
+                src="./images/box3-desktop.jpg"
+                alt="підбір кольорової гами"
               />
+              </picture>
               <p class="work-thumb">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -208,7 +212,7 @@
       </section>
       <section class="team-section section">  
         <h2 class="team-section__title">Наша команда</h2>      
-        <div class="conteiner team-section__container">          
+        <div class="container team-section__container">          
           <ul class="work-team list">
             <li class="people-box">
               <picture>
@@ -259,7 +263,6 @@
                     </a>
                   </li>
                 </ul>
-              
             </li>
             <li class="people-box">
               <picture>
@@ -275,8 +278,7 @@
                 alt="Ольга Рєпіна фото"
               />
               </picture>
-              
-                <h3 class="work-people">Ольга Рєпіна</h3>
+               <h3 class="work-people">Ольга Рєпіна</h3>
                 <p class="profession">Frontend Developer</p>
                 <ul class="social-list list">
                   <li>
@@ -311,8 +313,7 @@
                     </a>
                   </li>
                 </ul>
-              
-            </li>
+               </li>
             <li class="people-box">
              <picture>
                 <source srcset="./images/team3-desktop.webp 1x, ./images/team3-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
@@ -420,9 +421,9 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="company section">
-        <div class="conteiner">
-          <h2 class="work__title">Постійні клієнти</h2>
+      <section class="section">
+        <div class="container company__container">
+          <h2 class="work-company__title">Постійні клієнти</h2>
           <ul class="company-item list">
             <li class="company-list">
               <a class="company__icon link" href="#">
@@ -469,9 +470,9 @@
           </ul>
         </div>
       </section>
-    </main> -->
-    <!-- <footer class="footer" id="adres">
-      <div class="conteiner box-web">
+    </main>
+ <footer class="footer">
+      <div class="container box-web">
         <div class="footer-box">
           <a class="logo link" href="./index.html">
             <span class="blu">Web</span><span class="white">Studio</span></a
@@ -498,7 +499,7 @@
             </ul>
           </address>
         </div>
-        <div class="">
+        <div class="footer-list">
           <p class="text-adres">приєднуйтесь</p>
           <ul class="social-list-adres list">
             <li>
@@ -534,26 +535,27 @@
             </li>
           </ul>
         </div>
+        <form class="form-subscription__item list">
         <div class="form-subscription">
-          <p class="text-adres">підпишись на розсилку</p>
-          <form class="form-subscription__item list">
-            <input
+          <p class="text-adres">підпишіться на розсилку</p>
+           <label class="footer-form-field">
+             <input
               type="email"
               name="email"
-              id="email"
               class="form-subscription__mail-list"
               placeholder="E-mail"
               required
-            />
+            /> 
+           </label>  
             <button class="btn" type="button">
               Підписатися<svg class="btn-svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
                </svg>
              </button>
-          </form>
-        </div>
+           </div>
+        </form>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -616,12 +618,11 @@
             Погоджуюся з розсилкою та приймаю
             <a href="#" class=" checkbox-item">Умови договору</a>
           </label>
-
           <button type="submit" class="button-modal">Відправити</button>
         </form>
       </div>
-    </div> --> -->
-    <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
 </html>

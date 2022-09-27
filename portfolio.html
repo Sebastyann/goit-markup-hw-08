@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="conteiner page-header-container">
+      <div class="container page-header__container">
         <nav class="site-nav">
           <a href="./index.html" class="logo head"
             ><span class="logo blu">Web</span
@@ -27,35 +27,80 @@
           >
           <ul class="site-nav__list">
             <li class="list">
-              <a href="./index.html" class="site-nav__link link">Студія</a>
+              <a href="./index.html" class="site-nav__link link ">Студія</a>
             </li>
             <li class="list">
-              <a href="./portfolio.html" class="site-nav__link link current"
-                >Портфоліо</a
-              >
+              <a href="./portfolio.html" class="site-nav__link link current">Портфоліо</a>
             </li>
             <li class="list"><a href="" class="site-nav__link link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contacts-nav list">
+        <ul class="contacts-nav__tablet contacts-nav list">
           <li class="site-nav__mail ">
             <a class="link" href="mailto:info@devstudio.com">
               <svg class="site-nav__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a
-            >
+              <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio</a>
           </li>
-          <li class="tel list">
+          <li>
             <a class="link" href="tel:+380961111111">
               <svg class="site-nav__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a
-            >
+                <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
           </li>
-        </ul>
+            </ul>
+             <button type="button" class="open-mobile-menu-btn js-open-menu">
+           <svg class="open-mobile-menu-btn__icon">
+           <use href="./images/icons.svg#burger-icon"></use>
+        </svg>
+      </button>
       </div>
+      <div class="mobile-menu is-open js-menu-container">
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn js-close-menu">
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/icons.svg#icon-close">
+             </use>
+           </svg>
+         </button>
+          <ul class="site-nav-mobil__list">
+            <li class="site-nav list">
+              <a href="./index.html" class="mobile-nav-list__link link ">Студія</a>
+            </li>
+            <li class="site-nav list">
+              <a href="./portfolio.html" class="mobile-nav-list__link link current">Портфоліо</a>
+            </li >
+            <li class="site-nav list">
+              <a href="" class=" link">Контакти</a></li>
+          </ul>
+             <ul class="">
+               <li class="mobile-menu__bottom list">
+                  <a class="mobile-menu__tel link" href="tel:+380961111111">
+               +38 096 111 11 11</a>
+                 </li>
+                <li class="mobile-menu__bottom list">
+                  <a class="mobile-menu__mail link" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a>
+               </li>
+            </ul>
+           <ul class="modile-menu-item list ">
+            <li class="mobile-social-network__item">
+              <a class="modile-menu-company__list" href="http://instagram.com">Instagram</a>
+            </li>
+            <li class="mobile-social-network__item">
+              <a class="modile-menu-company__list" href="http://twitter.com">Twitter</a>
+            </li>
+            <li class="mobile-social-network__item">
+              <a class="modile-menu-company__list" href="http://facebook.com/">Facebook</a>
+            </li>
+            <li class="mobile-social-network__item">
+              <a class="modile-menu-company__list" href="http://linkedin.com/">LinkedIn</a>
+            </li>
+           </ul> 
+         </div>
+      </div> 
     </header>
     <main>
       <section class="section">
-        <div class="conteiner">
+        <div class="container">
           <h1 class="visually-hidden">filtr</h1>
           <ul class="list flex-menu">
             <li>
@@ -74,16 +119,25 @@
               <button class="model-open-button" type="button">Маркетинг</button>
             </li>
           </ul>
+          </div>
+          <div class="container">
           <ul class="list flex-conteiner">
             <li class="flex-element">
               <a href="#" class="work-content link">
                 <div class="teal-list-img">
-                  <img
-                    src="images/img5.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                <source srcset="./images/pf1-desktop.webp 1x, ./images/pf1-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf1-desktop.jpg 1x, ./images/pf1-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf1-tablet.webp 1x, ./images/pf1-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf1-tablet.jpg 1x, ./images/pf1-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf1-mobile.webp 1x, ./images/pf1-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf1-mobile.jpg 1x, ./images/pf1-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
+                class="work-picture"
+                src="./images/pf1-mobile.jpg"
+                alt="ноутбук"
+              />
+              </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -99,12 +153,19 @@
             <li class="flex-element">
               <a href="#" class="work-content link">
                 <div class="teal-list-img">
-                  <img
-                    src="images/img6.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                <source srcset="./images/pf2-desktop.webp 1x, ./images/pf2-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf2-desktop.jpg 1x, ./images/pf2-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf2-tablet.webp 1x, ./images/pf2-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf2-tablet.jpg 1x, ./images/pf2-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf2-mobile.webp 1x, ./images/pf2-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf2-mobile.jpg 1x, ./images/pf2-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
+                class="work-picture"
+                src="./images/pf2-mobile.jpg"
+                alt="два баскетболісти з мячем"
+              />
+              </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -120,11 +181,19 @@
             <li class="flex-element">
               <a href="#" class="work-content link">
                 <div class="teal-list-img">
-                  <img
-                    src="images/img7.jpg"
-                    alt="Ресторан Seafood"
-                    height="294"
-                  />
+                  <picture>
+                <source srcset="./images/pf3-desktop.webp 1x, ./images/pf3-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf3-desktop.jpg 1x, ./images/pf3-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf3-tablet.webp 1x, ./images/pf3-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf3-tablet.jpg 1x, ./images/pf3-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf3-mobile.webp 1x, ./images/pf3-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf3-mobile.jpg 1x, ./images/pf3-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
+                class="work-picture"
+                src="./images/pf3-mobile.jpg"
+                alt="лого ресторану"
+              />
+              </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -140,11 +209,19 @@
             <li class="flex-element">
               <a href="#" class="work-content link">
                 <div class="teal-list-img">
-                  <img src="images/img8.jpg" alt="Проєкт Prime" height="294" />
-                  <p class="overlay">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем
-                    функціоналу та сервісів. Все це дозволить відвідувачу
-                    отримати вичерпні відомості про компанію чи приватну особу.
+                <picture>
+                <source srcset="./images/pf4-desktop.webp 1x, ./images/pf4-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf4-desktop.jpg 1x, ./images/pf4-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf4-tablet.webp 1x, ./images/pf4-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf4-tablet.jpg 1x, ./images/pf4-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf4-mobile.webp 1x, ./images/pf4-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf4-mobile.jpg 1x, ./images/pf4-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
+                class="work-picture"
+                src="./images/pf4-mobile.jpg"
+                alt="навушники"
+              />
+              </picture>
                   </p>
                 </div>
                 <div class="list-blok">
@@ -156,7 +233,19 @@
             <li class="flex-element">
               <a href="#" class="work-content link">
                 <div class="teal-list-img">
-                  <img src="images/img9.jpg" alt="Проєкт Boxes" height="294" />
+                <picture>
+                <source srcset="./images/pf5-desktop.webp 1x, ./images/pf5-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf5-desktop.jpg 1x, ./images/pf5-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf5-tablet.webp 1x, ./images/pf5-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf5-tablet.jpg 1x, ./images/pf5-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf5-mobile.webp 1x, ./images/pf5-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf5-mobile.jpg 1x, ./images/pf5-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
+                class="work-picture"
+                src="./images/pf5-mobile.jpg"
+                alt="дві коробки"
+              />
+              </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -172,11 +261,19 @@
             <li class="flex-element">
               <a href="#" class="work-content link">
                 <div class="teal-list-img">
-                  <img
-                    src="images/img10.jpg"
-                    alt="Inspiration has no Borders"
-                    height="294"
-                  />
+                <picture>
+                <source srcset="./images/pf6-desktop.webp 1x, ./images/pf6-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf6-desktop.jpg 1x, ./images/pf6-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf6-tablet.webp 1x, ./images/pf6-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf6-tablet.jpg 1x, ./images/pf6-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf6-mobile.webp 1x, ./images/pf6-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf6-mobile.jpg 1x, ./images/pf6-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
+                class="work-picture"
+                src="./images/pf6-mobile.jpg"
+                alt="компютер єпл"
+              />
+              </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -192,11 +289,19 @@
             <li class="flex-element">
               <a href="#" class="work-content link">
                 <div class="teal-list-img">
-                  <img
-                    src="images/img11.jpg"
-                    alt="Видання Limited Edition"
-                    height="294"
-                  />
+                 <picture>
+                <source srcset="./images/pf7-desktop.webp 1x, ./images/pf7-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf7-desktop.jpg 1x, ./images/pf7-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf7-tablet.webp 1x, ./images/pf7-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf7-tablet.jpg 1x, ./images/pf7-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf7-mobile.webp 1x, ./images/pf7-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf7-mobile.jpg 1x, ./images/pf7-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
+                class="work-picture"
+                src="./images/pf7-mobile.jpg"
+                alt="розгонута книга"
+              />
+              </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -212,7 +317,19 @@
             <li class="flex-element">
               <a href="#" class="work-content link">
                 <div class="teal-list-img">
-                  <img src="images/img12.jpg" alt="Проєкт LAB" height="294" />
+                <picture>
+                <source srcset="./images/pf8-desktop.webp 1x, ./images/pf8-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf8-desktop.jpg 1x, ./images/pf8-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf8-tablet.webp 1x, ./images/pf8-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf8-tablet.jpg 1x, ./images/pf8-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf8-mobile.webp 1x, ./images/pf8-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf8-mobile.jpg 1x, ./images/pf8-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
+                class="work-picture"
+                src="./images/pf8-mobile.jpg"
+                alt="бірка з лейблом"
+              />
+              </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -228,11 +345,19 @@
             <li class="flex-element">
               <a href="#" class="work-content link">
                 <div class="teal-list-img">
-                  <img
-                    src="images/img13.jpg"
-                    alt="Growing Business"
-                    height="294"
-                  />
+                <picture>
+                <source srcset="./images/pf9-desktop.webp 1x, ./images/pf9-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./images/pf9-desktop.jpg 1x, ./images/pf9-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg"/>
+                <source srcset="./images/pf9-tablet.webp 1x, ./images/pf9-tablet@2x.webp 2x" media="(min-width: 768px)" type="image/webp"/>
+                <source srcset="./images/pf9-tablet.jpg 1x, ./images/pf9-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"/>
+                <source srcset="./images/pf9-mobile.webp 1x, ./images/pf9-mobile@2x.webp 2x" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./images/pf9-mobile.jpg 1x, ./images/pf9-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"/>
+                <img
+                class="work-picture"
+                src="./images/pf9-mobile.jpg"
+                alt="ноутбук на якому печатають"
+              />
+              </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -250,7 +375,7 @@
       </section>
     </main>
     <footer class="footer" id="adres">
-      <div class="conteiner box-web">
+      <div class="container box-web">
         <div class="footer-box">
           <a class="logo link" href="./index.html">
             <span class="blu">Web</span><span class="white">Studio</span></a
@@ -259,7 +384,7 @@
             <ul class="list menu-adress">
               <li class="adres-li">
                 <a
-                  class="maps link cursor"
+                  class="maps link"
                   href="https://goo.gl/maps/XMLc6LqxGpTmerbL7"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
@@ -277,7 +402,7 @@
             </ul>
           </address>
         </div>
-        <div class="">
+        <div class="footer-list">
           <p class="text-adres">приєднуйтесь</p>
           <ul class="social-list-adres list">
             <li>
@@ -313,25 +438,27 @@
             </li>
           </ul>
         </div>
+        <form class="form-subscription__item list">
         <div class="form-subscription">
-          <p class="text-adres">підпишись на розсилку</p>
-          <form class="form-subscription__item list">
-            <input
+          <p class="text-adres">підпишіться на розсилку</p>
+           <label class="footer-form-field">
+             <input
               type="email"
               name="email"
-              id="email"
               class="form-subscription__mail-list"
               placeholder="E-mail"
               required
-            />
+            /> 
+           </label>  
             <button class="btn" type="button">
               Підписатися<svg class="btn-svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+               </svg>
+             </button>
+           </div>
+        </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

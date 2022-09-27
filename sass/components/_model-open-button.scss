@@ -1,0 +1,24 @@
+.model-open-button {
+  display: inline-block;
+  text-align: center;
+  padding: 6px 22px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: 0px solid transparent;
+  cursor: pointer;
+  color: var(--title-text-color);
+  background-color: var(--secondaty-bg-color);
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
+
+&:hover,
+&:focus {
+  color: var(--primary-bg-color);
+  background: var(--primery-accent-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+}}
