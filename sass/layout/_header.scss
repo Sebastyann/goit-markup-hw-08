@@ -14,7 +14,7 @@
     line-height: 47px;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    transition: color 250ms var(--timing-function);
+    transition: color var(--timing-function);
 
     &:focus,
     &:hover,
@@ -93,7 +93,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    transition: color 250ms var(--timing-function);
+    transition: color var(--timing-function);
 
     &:focus,
     &:hover,
@@ -178,7 +178,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    transition: color 250ms var(--timing-function);
+    transition: color var(--timing-function);
 
     &:focus,
     &:hover,
@@ -206,7 +206,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--primary-text-color);
-    transition: color 250ms var(--timing-function);
+    transition: color var(--timing-function);
 
     &:focus,
     &:hover {

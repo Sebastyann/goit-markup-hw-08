@@ -7,7 +7,7 @@
   --primary-dark-color: #2f303a;
   --primary-bg-color: #ffffff;
   --primary-fon-color: #f5f5f5;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -156,7 +156,7 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  transition-duration: 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition-duration: var(--timing-function), fill var(--timing-function);
 }
 .modal-close-btn:focus, .modal-close-btn:hover {
   fill: var(--primery-accent-color);
@@ -183,7 +183,7 @@ button {
   cursor: pointer;
   background-color: var(--primery-accent-color);
   color: var(--secondaty-bg-color);
-  transition-duration: 250ms var(--timing-function);
+  transition-duration: var(--timing-function);
 }
 .hero-model-open-but:hover, .hero-model-open-but:focus {
   background-color: #188ce8;
@@ -334,6 +334,10 @@ textarea {
   transition: background-color var(--timing-function);
 }
 
+.working-section {
+  padding-top: 0;
+}
+
 @media screen and (max-width: 767px) {
   .working-section__container {
     display: none;
@@ -450,7 +454,7 @@ textarea {
     visibility: hidden;
     pointer-events: none;
     transform: translateX(100%);
-    transition: transform var(--timing-function), opacity var(--timing-function), visibility var(--timing-function);
+    transition: transform var(--timing-function), visability var(--timing-function), opacity var(--timing-function);
   }
   .mobile-menu.is-open {
     opacity: 1;
@@ -475,6 +479,7 @@ textarea {
     padding: 0;
     outline: none;
     line-height: 0;
+    border-radius: 50px;
   }
   .site-nav-mobil__list {
     margin-bottom: 302px;
@@ -555,7 +560,7 @@ textarea {
   cursor: pointer;
   color: var(--title-text-color);
   background-color: var(--secondaty-bg-color);
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+  transition: color var(--timing-function), background-color var(--timing-function), box-shadow var(--timing-function);
 }
 .model-open-button:hover, .model-open-button:focus {
   color: var(--primary-bg-color);
@@ -577,7 +582,7 @@ textarea {
     line-height: 47px;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    transition: color 250ms var(--timing-function);
+    transition: color var(--timing-function);
   }
   .site-nav .link:focus, .site-nav .link:hover, .site-nav .link:active {
     color: var(--primery-accent-color);
@@ -651,7 +656,7 @@ textarea {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    transition: color 250ms var(--timing-function);
+    transition: color var(--timing-function);
   }
   .site-nav .link:focus, .site-nav .link:hover, .site-nav .link:active {
     color: var(--primery-accent-color);
@@ -727,7 +732,7 @@ textarea {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    transition: color 250ms var(--timing-function);
+    transition: color var(--timing-function);
   }
   .site-nav .link:focus, .site-nav .link:hover, .site-nav .link:active {
     color: var(--primery-accent-color);
@@ -750,7 +755,7 @@ textarea {
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--primary-text-color);
-    transition: color 250ms var(--timing-function);
+    transition: color var(--timing-function);
   }
   .contacts-nav .link:focus, .contacts-nav .link:hover {
     color: var(--primery-accent-color);
@@ -947,7 +952,7 @@ textarea {
   fill: var(--primary-bg-color);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color var(--timing-function);
 }
 .icon-adres__link:hover, .icon-adres__link:focus {
   background-color: var(--primery-accent-color);
@@ -1225,7 +1230,7 @@ textarea {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: border-color 250ms var(--timing-function);
+  transition: border-color var(--timing-function);
 }
 .company-list:hover, .company-list:focus {
   border-color: var(--primery-accent-color);
@@ -1236,7 +1241,7 @@ textarea {
   height: 100%;
   color: #afb1b8;
   fill: currentColor;
-  transition: fill 250ms var(--timing-function);
+  transition: fill var(--timing-function);
 }
 .company__icon:hover, .company__icon:focus {
   fill: var(--primery-accent-color);
@@ -1374,7 +1379,7 @@ textarea {
   }
 }
 .flex-element {
-  transition: box-shadow 250ms var(--timing-function);
+  transition: box-shadow var(--timing-function);
 }
 .flex-element:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1384,7 +1389,7 @@ textarea {
   display: block;
   width: 294px;
   width: 370px;
-  transition: box-shadow 250ms var(--timing-function);
+  transition: box-shadow var(--timing-function);
 }
 .work-content .link:hover, .work-content .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1414,7 +1419,7 @@ textarea {
   padding: 63px 24px;
   overflow: auto;
   transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
+  transition: transform var(--timing-function);
 }
 
 .list-blok {
