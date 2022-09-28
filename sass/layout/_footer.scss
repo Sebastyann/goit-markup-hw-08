@@ -94,6 +94,15 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+.text-adres__item {
+  text-align: center;
+  color: var(--primary-bg-color);
+  line-height: 1.14;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
 
 .footer-form-field {
   width: 100%;
@@ -181,16 +190,24 @@
   }
   .text-adres {
     text-align: start;
+    margin-left: 93px;
   }
+  .text-adres__item {
+    text-align: start;
+  }
+
   .form-subscription {
     display: block;
     width: auto;
   }
-  .box-web {
-    }
+  
   .form-subscription__mail-list {
-   width: 358px;
+    width: 358px;
     height: 50px;
-    margin-bottom: 0; 
-  }  
+    margin-bottom: 0;
+    margin-left: 93px;
+  }
+  .footer-list {
+    margin-left: 70px;
+  }
 }

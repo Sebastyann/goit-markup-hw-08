@@ -162,6 +162,12 @@ button {
   fill: var(--primery-accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .hero-model-open-but {
   display: inline-block;
   text-align: center;
@@ -284,6 +290,9 @@ textarea {
 .checkbox-label {
   display: flex;
   justify-content: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .modal-form-own-checkbox {
@@ -970,6 +979,16 @@ textarea {
   margin-bottom: 20px;
 }
 
+.text-adres__item {
+  text-align: center;
+  color: var(--primary-bg-color);
+  line-height: 1.14;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
 .footer-form-field {
   width: 100%;
 }
@@ -1057,6 +1076,10 @@ textarea {
   }
   .text-adres {
     text-align: start;
+    margin-left: 93px;
+  }
+  .text-adres__item {
+    text-align: start;
   }
   .form-subscription {
     display: block;
@@ -1066,6 +1089,10 @@ textarea {
     width: 358px;
     height: 50px;
     margin-bottom: 0;
+    margin-left: 93px;
+  }
+  .footer-list {
+    margin-left: 70px;
   }
 }
 .team-section {
