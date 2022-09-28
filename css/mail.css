@@ -527,6 +527,7 @@ textarea {
   }
   .modile-menu-item {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 20px;
   }
   .modile-menu-company__list {
@@ -1374,7 +1375,7 @@ textarea {
     justify-content: center;
     column-gap: 8px;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-left: auto;
   }
 }
