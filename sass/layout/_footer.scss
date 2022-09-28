@@ -19,12 +19,12 @@
   color: var(--primary-bg-color);
 }
 
-  .social-list-adres {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 10px;
-  }
+.social-list-adres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
 
 .btn {
   @extend %flex-align;
@@ -57,11 +57,11 @@
 .icon-adres__link {
   @extend %flex-align;
   width: 44px;
-    height: 44px;
-    padding: 12px;
-    fill: var(--primary-bg-color);
-    background: rgba(255,255,255,.1);
-    border-radius: 50%;
+  height: 44px;
+  padding: 12px;
+  fill: var(--primary-bg-color);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
   transition: background-color 250ms var(--timing-function);
 
   &:hover,
@@ -168,7 +168,6 @@
     width: 358px;
     height: 50px;
   }
-
   .footer-form-thumb {
     width: 570px;
     flex-direction: row;
@@ -177,10 +176,21 @@
     margin-left: 0;
     margin-right: 0;
   }
-
-
-
+  .footer-box {
+    text-align: left;
+  }
   .text-adres {
     text-align: start;
   }
+  .form-subscription {
+    display: block;
+    width: auto;
+  }
+  .box-web {
+    }
+  .form-subscription__mail-list {
+   width: 358px;
+    height: 50px;
+    margin-bottom: 0; 
+  }  
 }
