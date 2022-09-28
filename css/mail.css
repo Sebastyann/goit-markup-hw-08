@@ -23,7 +23,7 @@
   margin: -1px;
 }
 
-.company__icon, .company-list, .company-item, .btn {
+.company__icon, .company-list, .company-item, .icon-adres__link, .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -134,8 +134,8 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 581px;
-  width: 528px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: var(--primary-bg-color);
   border-radius: 4px;
@@ -893,6 +893,13 @@ textarea {
   color: var(--primary-bg-color);
 }
 
+.social-list-adres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
 .btn {
   min-width: 200px;
   height: 50px;
@@ -922,13 +929,12 @@ textarea {
 }
 
 .icon-adres__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
+  padding: 12px;
+  fill: var(--primary-bg-color);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms var(--timing-function);
 }
 .icon-adres__link:hover, .icon-adres__link:focus {
@@ -939,6 +945,16 @@ textarea {
   width: 20px;
   height: 20px;
   fill: var(--primary-bg-color);
+}
+
+.footer-text-adres {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
 }
 
 .text-adres {
@@ -1010,14 +1026,33 @@ textarea {
     align-items: baseline;
     margin-bottom: 0;
   }
+  .footer-form-thumb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-.social-list-adres {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 10px;
+@media screen and (min-width: 1200px) {
+  .footer-form-field {
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+  }
+  .footer-form-thumb {
+    width: 570px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .text-adres {
+    text-align: start;
+  }
 }
-
 .team-section {
   background-color: var(--secondaty-bg-color);
 }
@@ -1192,7 +1227,6 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 450px;
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;

@@ -3,8 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 581px;
-  width: 528px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: var(--primary-bg-color);
   border-radius: 4px;
@@ -28,7 +28,8 @@
   transition-duration: 250ms var(--timing-function),
     fill 250ms var(--timing-function);
 
-&:focus,
-&:hover {
-  fill: var(--primery-accent-color);
-}}
+  &:focus,
+  &:hover {
+    fill: var(--primery-accent-color);
+  }
+}
