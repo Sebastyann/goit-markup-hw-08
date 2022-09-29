@@ -1,7 +1,4 @@
 
-.working-section {
-  padding-top: 0;
-}
 @media screen and (max-width: 767px) {
 .working-section__container {
   display: none;
@@ -17,6 +14,10 @@
 @media screen and (min-width: 1200px) {
 .working-section__container {
   display: block;
+}
+.working-section {
+  padding-top: 60px;
+    padding-bottom: 60px;
 }
 .container {
     width: 1200px;

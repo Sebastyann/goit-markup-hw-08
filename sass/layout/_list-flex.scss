@@ -43,13 +43,10 @@
   transition: transform var(--timing-function);
 }
 .list-blok {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-top: 20px;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
+  flex-grow: 1;
 }
 .list-pro {
   font-weight: 700;
@@ -81,6 +78,11 @@
   }
   .flex-element {
     flex-basis: calc((100% - 30px) / 2);
+  }
+  .work-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 }
 
